@@ -54,8 +54,6 @@ export default function ComponentExamplesPage() {
   const [selectedContactPreferences, setSelectedContactPreferences] = useState<
     string[]
   >(["email", "text"]);
-  const [selectedContactPreferenceHints, setSelectedContactPreferenceHints] =
-    useState<string[]>(["email", "text"]);
   const [selectedChannels, setSelectedChannels] = useState<string[]>([]);
   const [selectedContactDetails, setSelectedContactDetails] = useState<
     string[]
@@ -462,24 +460,12 @@ export default function ComponentExamplesPage() {
           name="contact-preferences"
           legend="How would you like to receive updates?"
           items={[
-            {
-              value: "email",
-              text: "Email",
-              hint: "We’ll send updates to your registered email address",
-            },
-            {
-              value: "text",
-              text: "Text message",
-              hint: "We’ll only send important service updates",
-            },
-            {
-              value: "phone",
-              text: "Phone",
-              hint: "We may call you if we need more information",
-            },
+            { value: "email", text: "Email" },
+            { value: "text", text: "Text message" },
+            { value: "phone", text: "Phone" },
           ]}
-          values={selectedContactPreferenceHints}
-          onChange={handleCheckboxChange(setSelectedContactPreferenceHints)}
+          values={selectedContactPreferences}
+          onChange={handleCheckboxChange(setSelectedContactPreferences)}
         />
 
         <h4 className="govuk-heading-s govuk-!-margin-top-8">
@@ -1071,7 +1057,7 @@ export default function ComponentExamplesPage() {
           PhaseBanner
         </h3>
 
-        <PhaseBanner phase="Beta">
+        <PhaseBanner phase="beta">
           This is a new service – your{" "}
           <a href="/feedback" className="govuk-link">
             feedback
