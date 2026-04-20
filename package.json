@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@dan-humpherson/govuk-react-adapter": "^0.1.29",
+    "@dan-humpherson/govuk-react-adapter": "^0.1.30",
     "govuk-frontend": "^6.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
