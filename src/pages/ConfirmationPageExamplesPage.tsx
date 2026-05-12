@@ -27,13 +27,13 @@ export default function ConfirmationPageExamplesPage() {
             referenceNumber="HDJ2123F"
             body={
               <>
-                <p>We have sent you a confirmation email.</p>
+                <p className="govuk-body">We have sent you a confirmation email.</p>
               </>
             }
             nextSteps={
               <>
-                <p>We’ve sent your application to our licensing team.</p>
-                <p>They will contact you if they need more information.</p>
+                <p className="govuk-body">We’ve sent your application to our licensing team.</p>
+                <p className="govuk-body">They will contact you if they need more information.</p>
               </>
             }
           />
@@ -53,12 +53,12 @@ export default function ConfirmationPageExamplesPage() {
             title="Preferences updated"
             body={
               <>
-                <p>Your communication preferences have been saved.</p>
+                <p className="govuk-body">Your communication preferences have been saved.</p>
               </>
             }
             nextSteps={
               <>
-                <p>
+                <p className="govuk-body">
                   Your new settings will apply the next time we contact you.
                 </p>
               </>
@@ -84,12 +84,12 @@ export default function ConfirmationPageExamplesPage() {
             referenceNumber="REP-2026-441"
             body={
               <>
-                <p>Your report has been submitted successfully.</p>
+                <p className="govuk-body">Your report has been submitted successfully.</p>
               </>
             }
             nextSteps={
               <>
-                <p>
+                <p className="govuk-body">
                   We will review your report and contact you if we need more
                   information.
                 </p>

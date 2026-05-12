@@ -1247,11 +1247,7 @@ export default function ComponentExamplesPage() {
               title: "Company details",
               href: "/company-details",
               hint: "Includes registration number and registered office address",
-              status: (
-                <strong className="govuk-tag govuk-tag--blue">
-                  Incomplete
-                </strong>
-              ),
+              status: <Tag colour="blue">Incomplete</Tag>,
             },
             {
               id: "financial-history",

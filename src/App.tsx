@@ -76,31 +76,33 @@ function TestPageNavigation() {
   );
 }
 
+const base = import.meta.env.BASE_URL;
+
 export default function App() {
   return (
     <GovUkPageTemplate
-      homepageUrl="/"
+      homepageUrl={base}
       headerProps={{
         productName: "GOV.UK",
       }}
       serviceNavigationProps={{
         serviceName: "GOV.UK React Adapter test app",
-        serviceUrl: "/",
+        serviceUrl: base,
         navigationItems: [
-          { href: "#/all", text: "All examples" },
-          { href: "#/components", text: "Components" },
-          { href: "#/question-pages", text: "Question pages" },
-          { href: "#/start-pages", text: "Start pages" },
-          { href: "#/check-answers-pages", text: "Check answers pages" },
-          { href: "#/confirmation-pages", text: "Confirmation pages" },
+          { href: `${base}all`, text: "All examples" },
+          { href: `${base}components`, text: "Components" },
+          { href: `${base}question-pages`, text: "Question pages" },
+          { href: `${base}start-pages`, text: "Start pages" },
+          { href: `${base}check-answers-pages`, text: "Check answers pages" },
+          { href: `${base}confirmation-pages`, text: "Confirmation pages" },
         ],
       }}
       footerProps={{
         meta: {
           items: [
-            { text: "Help", href: "/help" },
-            { text: "Cookies", href: "/cookies" },
-            { text: "Accessibility", href: "/accessibility" },
+            { text: "Help", href: `${base}help` },
+            { text: "Cookies", href: `${base}cookies` },
+            { text: "Accessibility", href: `${base}accessibility` },
           ],
         },
       }}
